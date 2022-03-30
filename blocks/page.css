@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+}
+
+
+.page{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #2A2C2F;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 163%;
+    color: #ffffff;
+}
+

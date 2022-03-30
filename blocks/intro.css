@@ -1,0 +1,38 @@
+.intro{
+    max-width: 785px;
+    display: flex;
+    margin-left: 9.25rem;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 90px;
+    margin-bottom: 118px;
+}
+
+.intro__heading{
+    font-weight: 900;
+    font-size: 3.375rem;
+    line-height: 107%;
+    margin-bottom: 0;
+    margin-top:0
+}
+
+.intro__sub-heading{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 142%;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.intro__author{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 142%;
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.intro__content{
+    margin-top: 32px;
+}

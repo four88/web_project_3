@@ -1,0 +1,28 @@
+.lead{
+    max-width: 984px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lead__heading{
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 104%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.lead__sub-heading{
+    width: 720px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 64px;
+    opacity: 0.64;
+}
