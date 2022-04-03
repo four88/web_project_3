@@ -17,3 +17,11 @@ body{
     color: #ffffff;
 }
 
+/* for 768 px screen */
+
+@media screen and (max-width: 768px) {
+    .page{
+        max-width:768px;
+    }
+    
+}

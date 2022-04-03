@@ -17,6 +17,7 @@
 }
 
 .intro__sub-heading{
+    max-width: 720px;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 142%;
@@ -25,6 +26,7 @@
 }
 
 .intro__author{
+    max-width: 720px;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 142%;
@@ -34,5 +36,22 @@
 }
 
 .intro__content{
+    max-width: 720px;
     margin-top: 32px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        max-width: 720px;
+        margin-left: 0;
+        margin: auto;
+        margin-top: 88px;
+        margin-bottom: 90px;
+    }
 }

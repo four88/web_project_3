@@ -10,16 +10,10 @@
     margin: auto;
     position: relative;
     z-index: 0;
+    box-shadow: inset 0 0 0 2000px rgba(42, 44, 47, 0.3);
+    transition-duration: 0.2s;
 }
 
-.cover__overlay{
-    width: 100%;
-    height: 100%;
-    background:rgba(42, 44, 47, 0.3);
-    z-index: 1;
-    position:absolute;
-    
-}
 .cover__content{
     text-align: center;
     display: flex;
@@ -27,7 +21,7 @@
     flex-direction: column;
     z-index: 2;
     row-gap: 32px;
-}
+} 
 
 .cover__title{
     font-weight: 900;
@@ -36,14 +30,30 @@
     color: #FFFDFD;
     margin-top:0;
     margin-bottom: 0;
+    z-index: 2;
 
 }
 
 .cover__sub-title{
     margin-top: 0;
     margin-bottom: 0;
+    z-index: 2;
 }
+
 .button-cover{
     width: 137px;
     height: 48px;
+    z-index: 2;
+}
+
+
+.cover:hover{
+    box-shadow: inset 0 0 0 2000px rgba(42, 44, 47, 0.8);
+}
+
+@media  screen and (max-width: 768px){
+    .cover{
+        max-width: 100%;
+    }
+    
 }
