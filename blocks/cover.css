@@ -57,3 +57,30 @@
     }
     
 }
+
+@media  screen and (max-width: 320px){
+    .cover{
+        max-height: 254px;
+    }
+
+    .cover__content{
+        row-gap: 16px;
+        max-width: 288px;
+    }
+
+    .cover__title{
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 109%;
+        text-align: center;
+    }
+
+    .cover__sub-titleP{
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 114%;
+
+        text-align: center;
+    }
+    
+}

@@ -25,3 +25,11 @@ body{
     }
     
 }
+
+@media screen and (max-width: 320px){
+    .page{
+        max-width: 320px;
+        font-size: 1rem;
+        line-height: 163%;
+    }    
+}
