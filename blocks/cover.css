@@ -1,5 +1,5 @@
 .cover{
-    width: 1184px;
+    width:calc(100% - 96px);
     height: 740px;
     background-image: url(../images/cover_img.png);
     background-blend-mode: overlay;
@@ -53,7 +53,7 @@
 
 @media  screen and (max-width: 768px){
     .cover{
-        max-width: 100%;
+        width: 100%;
     }
     
 }
