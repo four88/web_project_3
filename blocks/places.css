@@ -1,4 +1,4 @@
-.places__container{
+.places{
     display: flex;
     flex-direction: column;
     margin-bottom: 92px;
@@ -7,7 +7,7 @@
 }
 
 
-.places{
+.places__container{
     max-width: 984px;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -102,11 +102,11 @@
 }
 
 @media screen and (max-width: 768px){
-    .place__container{
+    .places{
         row-gap: 72px;
     }
 
-    .places{
+    .places__container{
         max-width: 720px;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -188,12 +188,12 @@
 
 
     @media  screen and (max-width: 320px){
-        .place__container{
+        .places{
             row-gap: 50px;
             margin-bottom: 64px;
         }
 
-        .places{
+        .places__container{
             max-width: 320px;
             display: flex;
             flex-direction: column;
