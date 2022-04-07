@@ -11,7 +11,7 @@
     max-width: 984px;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 460px auto  ;
+    grid-template-rows: 1fr 460px auto;
     margin: auto;
     position: relative;
 
@@ -110,7 +110,7 @@
         max-width: 720px;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 340px auto  ;
+        grid-template-rows: 1fr 340px auto;
         margin: auto;
         position: relative;
     }

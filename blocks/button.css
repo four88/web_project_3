@@ -3,19 +3,16 @@
     border: none;
     background: #0278FE;
     transition-duration: 0.2s;
-}
-
-
-
-.button:hover{
-    background: #0063D2;
-}
-
-.button__link{
     font-style: normal;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 122%;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+
+
+.button:hover{
+    background: #0063D2;
 }
