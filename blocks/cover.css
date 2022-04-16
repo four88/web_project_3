@@ -1,6 +1,6 @@
 .cover{
     width:calc(100% - 96px);
-    height: 740px;
+    min-height: 740px;
     background-image: url(../images/cover_img.png);
     background-blend-mode: overlay;
     background-size: cover;
@@ -36,10 +36,11 @@
 .cover__sub-title{
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 122%;
     z-index: 2;
 }
 
-.button-cover{
+.button--cover{
     width: 137px;
     height: 48px;
     z-index: 2;
@@ -60,7 +61,7 @@
 
 @media  screen and (max-width: 320px){
     .cover{
-        max-height: 254px;
+        min-height: 254px;
     }
 
     .cover__content{
@@ -69,7 +70,6 @@
     }
 
     .cover__title{
-        font-weight: 900;
         font-size: 2rem;
         line-height: 109%;
         text-align: center;
@@ -77,13 +77,12 @@
     }
 
     .cover__sub-title{
-        font-weight: 400;
         font-size: 0.875rem;
         line-height: 114%;
         text-align: center;
     }
 
-    .button-cover{
+    .button--cover{
         margin-top: 16px;
     }
     

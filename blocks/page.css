@@ -1,12 +1,13 @@
-body{
+.body{
     margin: 0 auto;
+    background-color: #2A2C2F;
+    display: flex;
 }
 
 
 .page{
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #2A2C2F;
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
@@ -30,6 +31,5 @@ body{
     .page{
         max-width: 320px;
         font-size: 1rem;
-        line-height: 163%;
     }    
 }

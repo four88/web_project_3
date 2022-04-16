@@ -1,9 +1,11 @@
 .places{
+    max-width: 984px;
     display: flex;
     flex-direction: column;
+    margin: auto;
     margin-bottom: 92px;
     margin-top: 92px;
-    row-gap: 80px;
+    gap: 80px;
 }
 
 
@@ -12,7 +14,6 @@
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 460px auto;
-    margin: auto;
     position: relative;
 
 }
@@ -23,6 +24,8 @@
 
 
 .places__title{
+    display: flex;
+    align-items: flex-end;
     width: 460px;
     font-weight: 900;
     font-size: 4.5rem;
@@ -95,7 +98,7 @@
     margin-bottom: 0;
 }
 
-.button-places{
+.button--places{
     width: 248px;
     height: 48px;
     margin-top: 48px;
@@ -108,16 +111,11 @@
 
     .places__container{
         max-width: 720px;
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 340px auto;
-        margin: auto;
-        position: relative;
     }
 
     .places__title{
     max-width: 340px;
-    font-weight: 900;
     font-size: 2.625rem;
     line-height: 110%;
     }
@@ -126,71 +124,29 @@
         max-width: 316px;
         margin-left: 28px;
     }
-
-
-    .places__artist-span{
-        font-weight: 400;
-        font-size: 0.75rem;
-        line-height: 125%;
-    /* identical to box height */
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: #AAAAAA;
-        margin-top: 0;
-        margin-bottom: 8px;
-    }
-    
-    .places__artist-name{
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 122%;
-        color: #FFFFFF;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
     
     .places__image{
         width: 340px;
         height: 340px;
-        margin-bottom: 0;
     }
     
     .places__content-box{
         width: 352px;
-        margin-top: 0;
         margin-left: 28px;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column: 2;
-        grid-column-end: 3;
     }
     
     .places__content{
-        font-style: normal;
-        margin-top: 0;
-        margin-bottom: 25px;
-        font-weight: 400;
         font-size: 1rem;
-        line-height: 163%;
 
     }
-    
-    
-    .places__content:nth-last-of-type(1){
-        margin-bottom: 0;
-    }
-    
-    .button-places{
-        width: 248px;
-        height: 48px;
-        margin-top: 48px;
-    }
+
 
 
     @media  screen and (max-width: 320px){
         .places{
-            row-gap: 50px;
+            gap: 50px;
             margin-bottom: 64px;
+            margin-top: 62px;
         }
 
         .places__container{
@@ -203,7 +159,6 @@
 
         .places__title{
             max-width:288px;
-            font-weight: 900;
             font-size: 2rem;
             line-height: 109%;
             margin-bottom: 30px;
@@ -229,12 +184,9 @@
 
         .places__content{
             max-width: 100%;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 163%;
         }
 
-        .button-places{
+        .button--places{
             width: 288px;
             margin-top: 30px;
         }
