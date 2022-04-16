@@ -18,3 +18,5 @@ This project is for learning about adaptive web design and working with layouts.
 * grid layout
 * flexbox
 
+The link of this project : [Click here](https://four88.github.io/web_project_3/)
+
