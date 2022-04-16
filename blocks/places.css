@@ -98,7 +98,7 @@
     margin-bottom: 0;
 }
 
-.button--places{
+.places .button{
     width: 248px;
     height: 48px;
     margin-top: 48px;
@@ -186,7 +186,7 @@
             max-width: 100%;
         }
 
-        .button--places{
+        .places .button{
             width: 288px;
             margin-top: 30px;
         }

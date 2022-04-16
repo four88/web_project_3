@@ -40,7 +40,7 @@
     z-index: 2;
 }
 
-.button--cover{
+.cover__content .button{
     width: 137px;
     height: 48px;
     z-index: 2;
