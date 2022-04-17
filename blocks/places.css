@@ -3,8 +3,6 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-left: 148px;
-    padding-right: 148px;
     margin-bottom: 92px;
     margin-top: 92px;
     gap: 80px;
@@ -14,10 +12,9 @@
 .places__container{
     max-width: 100%;
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  auto 1fr;
     grid-template-rows: 1fr 460px auto;
     position: relative;
-
 }
 
 .places:first-child{
@@ -28,7 +25,7 @@
 .places__title{
     display: flex;
     align-items: flex-end;
-    width: 460px;
+    max-width: 460px;
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 106%;
@@ -40,7 +37,7 @@
 
 
 .places__artist{
-    width: 456px;
+    max-width: 456px;
     margin-top: 0;
     margin-bottom: 48px;
     display: flex;
@@ -78,7 +75,7 @@
 }
 
 .places__content-box{
-    width: 484px;
+    max-width: 484px;
     margin-top: 0;
     margin-left: 40px;
     grid-row-start: 2;
@@ -110,8 +107,6 @@
     .places{
         max-width: calc(100% - 48px);
         row-gap: 72px;
-        padding-left: 24px;
-        padding-right: 24px;
     }
 
     .places__container{
@@ -131,12 +126,12 @@
     }
     
     .places__image{
-        width: 340px;
-        height: 340px;
+        max-width: 340px;
+        max-height: 340px;
     }
     
     .places__content-box{
-        width: 352px;
+        max-width: 352px;
         margin-left: 28px;
     }
     
