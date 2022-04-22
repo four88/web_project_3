@@ -40,7 +40,7 @@
     z-index: 2;
 }
 
-.cover__content .button{
+.cover__button{
     width: 137px;
     height: 48px;
     z-index: 2;
@@ -82,7 +82,7 @@
         text-align: center;
     }
 
-    .button--cover{
+    .cover__button{
         margin-top: 16px;
     }
     
