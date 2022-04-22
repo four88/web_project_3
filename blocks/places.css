@@ -118,15 +118,10 @@
     .places__container{
         padding-left: 24px;
         padding-right: 24px;
+        column-gap: 20px;
     }
     .places__content{
         font-size: 0.825rem;
-    }
-
-    .places__container{
-
-        column-gap: 20px;
-
     }
 }
 
