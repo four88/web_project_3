@@ -6,7 +6,6 @@
     margin: auto;
     margin-bottom: 92px;
     margin-top: 92px;
-    gap: 80px;
     box-sizing: border-box;
     padding: 0px;
 }
@@ -16,13 +15,16 @@
     width: 100%;
     display: grid;
     grid-template-columns: 460px 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 460px auto  ;
     column-gap: 40px;
+    row-gap: 48px;
     grid-template-areas:
     "title artist"
-    "image content";
+    "image paragraph"
+    "button paragraph";
     box-sizing: border-box;
     position: relative;
+    padding-bottom: 80px;
 
 }
 
@@ -30,8 +32,13 @@
     margin-top: 0;
 }
 
+.places__container:last-of-type{
+    padding-bottom: 0;
+}
+
 
 .places__title{
+    grid-area: title;
     display: flex;
     align-items: flex-end;
     max-width: 460px;
@@ -39,21 +46,19 @@
     font-size: 4.5rem;
     line-height: 106%;
     margin-top: 0;
-    margin-bottom: 48px;
-    grid-area: "title";
-
+    margin-bottom: 0;
 }
 
 
 
 .places__artist{
+    grid-area: artist;
     max-width: 456px;
     margin-top: 0;
-    margin-bottom: 48px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    grid-area: "artist";
 
     
 }
@@ -80,17 +85,16 @@
 }
 
 .places__image{
-    max-width: 460px;
+    grid-area: image;
     height: 460px;
     width: 100%;
     object-fit: cover;
-    grid-area: "image";
 }
 
 .places__content-box{
+    grid-area: paragraph;
     max-width: 484px;
     margin-top: 0;
-    grid-area: "content";
 }
 
 .places__content{
@@ -106,12 +110,7 @@
     margin-bottom: 0;
 }
 
-.places__button{
-    width: 248px;
-    height: 48px;
-    margin-top: 48px;
 
-}
 
 @media screen and (max-width: 990px){
     
@@ -130,6 +129,7 @@
     .places{
         width: 100%;
         row-gap: 72px;
+        
 
     }
     
@@ -138,7 +138,7 @@
         margin: auto;
         padding: 0;
         grid-template-columns:  340px 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto 340px auto;
         column-gap: 28px;
         position: relative;
     }
@@ -183,12 +183,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 30px;
         }
 
         .places__title{
             max-width:288px;
             margin: auto;
-            margin-bottom: 30px;
             align-self: flex-start;
 
             
@@ -196,15 +196,13 @@
 
         .places__artist{
             max-width: 288px;
-            margin:0;
-            margin-bottom: 30px;
+            margin:0 0;
 
         }
 
         .places__image{
             width: 100%;
-            height: 320px;
-            margin-bottom: 30px;
+            height: 320px 0;
         }
 
         .places__content-box{
@@ -234,6 +232,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 30px;
         }
 
         .places__title{
@@ -241,7 +240,7 @@
             font-size: 2rem;
             line-height: 109%;
             margin: 0;
-            margin-bottom: 30px;
+            
             align-self: flex-start;
             padding-left: 16px;
             
@@ -250,7 +249,7 @@
         .places__artist{
             max-width: 288px;
             margin:0;
-            margin-bottom: 30px;
+            
             align-self: start;
             padding-left: 16px;
         }
@@ -258,7 +257,7 @@
         .places__image{
             width: 100%;
             max-height: 320px;
-            margin-bottom: 30px;
+            margin: 0;
         }
 
         .places__content-box{
@@ -271,9 +270,9 @@
             max-width: 100%;
         }
 
-        .places__button{
-            max-width: 288px;
-            margin-top: 30px;
+        .button{
+            width: 288px;
+            padding: 0;
         }
         
     }    

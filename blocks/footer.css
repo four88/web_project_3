@@ -1,5 +1,7 @@
 .footer{
     margin: auto;
+    display: flex;
+    justify-content:center;
 }
 
 .footer__copyright{
