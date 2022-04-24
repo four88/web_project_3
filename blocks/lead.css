@@ -38,6 +38,10 @@
         max-width: 100%;
     }
 
+    .lead__heading{
+        max-width: 720px;
+    }
+
 
 
     .lead__image{
